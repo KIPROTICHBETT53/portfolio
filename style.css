@@ -216,11 +216,12 @@ span{
     content: "";
     background-color: black;
     position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
+    width: 2px;  /* Thinner cursor */
+    height: 1.2em;  /* Adjusted height to match the font size */
+    border-left: 2px solid #b74b4b;
+    right: -5px;
     animation: cursor 0.6s infinite;
+}
 }
 
 @keyframes cursor{
