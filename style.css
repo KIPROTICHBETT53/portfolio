@@ -366,73 +366,54 @@ span{
 }
 
 
-/* Skills Section */
 .skills {
-    padding: 5rem 9%;
-    background-image: url('images/workback.jpg');
-     background-size: cover;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Darken background */
-    color: white;
     text-align: center;
+    margin: 50px 0;
 }
 
 .skills h2 {
-    font-size: 3.6rem;
-    margin-bottom: 3rem;
-    color: #b74b4b;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between skill buttons */
 }
 
-.skill-btn {
-    display: inline-block;
-    width: 15rem; /* Increased size for bigger circles */
-    height: 15rem;
-    line-height: 15rem;
-    background-color: transparent;
-    color: #b74b4b;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 50%; /* Circular shape */
-    border: 2px solid #b74b4b; /* Matches the 'Hire Me' button */
-    position: relative;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+.skill {
+    background-color: #f1f1f1; /* Light background */
+    padding: 15px 30px;
+    border-radius: 50px; /* Make them rounded */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+    cursor: default; /* Not clickable */
 }
 
-.skill-btn:hover {
-    background-color: #b74b4b;
-    color: white;
-    box-shadow: 0 0 20px rgba(183, 75, 75, 0.6); /* Stronger shadow on hover */
-    transition: all 0.4s ease;
+.skill:hover {
+    background-color: #ddd; /* Slight change on hover for interactivity */
 }
 
-.skill-btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.4s ease, height 0.4s ease;
+.skill:active {
+    transform: scale(0.95); /* Slight "press" effect */
 }
 
-.skill-btn:hover::before {
-    width: 300%;
-    height: 300%;
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically on smaller screens */
+        align-items: center;
+    }
+    
+    .skill {
+        width: 80%; /* Make the buttons wider on smaller screens */
+    }
 }
+
 
 /* Responsive Design */
 @media(max-width: 1200px) {
