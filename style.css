@@ -792,3 +792,9 @@ span{
         font-size: 1.6rem; /* Adjusted for smaller screens */
     }
 }
+    .disabled {
+         color: gray; /* Change color to indicate it's disabled */
+         opacity: 0.6; /* Optional: make it look less prominent */
+         pointer-events: none; /* Prevents interaction */
+}
+
