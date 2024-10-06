@@ -7,30 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Website</title>
-    <style>
-        /* Disable skills section links */
-        .disabled {
-            pointer-events: none; /* Prevents clicking */
-            opacity: 0.6; /* Makes it visually disabled */
-        }
-
-        /* Fix the active class for nav */
-        nav a.active {
-            color: #e63946;
-            border-bottom: 2px solid #e63946;
-        }
-    </style>
 </head>
-
 <body>
     <header>
         <a href="#" class="logo">ELLY</a>
 
         <nav>
-            <a href="#home" class="active">Home</a>
+            <a href="#home" class="active"> Home</a>
             <a href="#services">Services</a>
             <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
+            <a href="#Certifications">Certifications</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -44,81 +30,143 @@
         <div class="home-content">
             <h1>Hi, It's <span>ELLY</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Hi welcome to my portfolio, feel free to scroll around, get to know what I got to offer and reach out so we can work together, Cheers!.</p>
+            <p>Hi welcome to my portfolio, feel free to scroll around,get to know what i got to offer and reach out so we can work together,Cheers!.</p>
             <div class="social-icons">
-                <!-- Social Icons will remain active -->
                 <a href="https://www.linkedin.com/in/elly-bett-5b2535247" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/KIPROTICHBETT53" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/wrootwreck" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="https://drive.google.com/open?id=1FBB_n8Kemb3TMqsO-T9iDfXxhotjhth7&usp=drive_fs" class="btn" target="_blank">View CV</a>
             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ellybett53@gmail.com" class="btn">Hire me</a>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
-        <h2>My Services</h2>
-        <div class="service-container">
-            <!-- Service items -->
+    <h2>My Services</h2>
+    <div class="service-container">
+        <div class="service">
+            <h3>Software Development</h3>
+            <p>I provide professional software development services to help you build custom applications.</p>
+            <a href="#" class="btn">Software Development</a>
+            <img src="images/software development.jpg" alt="Software Development">
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container disabled">
-            <span class="skill">Web Development</span>
-            <span class="skill">Machine Learning</span>
-            <span class="skill">Artificial Intelligence</span>
-            <span class="skill">Python Programming</span>
-            <span class="skill">Database Management</span>
+        <div class="service">
+            <h3>AI Solutions</h3>
+            <p>Leverage the power of AI to transform your business with intelligent solutions.</p>
+            <a href="#" class="btn">AI Solutions</a>
+            <img src="images/ai consulting.jpg" alt="AI Solutions">
         </div>
-    </section>
+
+        <div class="service">
+            <h3>Python Programming</h3>
+            <p>Expert Python programming services for web development, data science, and more.</p>
+            <a href="#" class="btn">Python Programming</a>
+            <img src="images/python programming.jpg" alt="Python Programming">
+        </div>
+
+        <div class="service">
+            <h3>Microsoft Dynamics</h3>
+            <p>Optimize your business with Microsoft Dynamics solutions tailored to your needs.</p>
+            <a href="#" class="btn">Microsoft Dynamics</a>
+            <img src="images/microsoft dynamics.jpg" alt="Microsoft Dynamics">
+        </div>
+
+        <div class="service">
+            <h3>IT Consulting</h3>
+            <p>Professional IT consulting services to help you strategize and optimize your IT operations.</p>
+            <a href="#" class="btn">IT Consulting</a>
+            <img src="images/it consulting.jpg" alt="IT Consulting">
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <a href="#" class="skill-btn">Web Development</a>
+        <a href="#" class="skill-btn">Machine Learning</a>
+        <a href="#" class="skill-btn">Artificial Intelligence</a>
+        <a href="#" class="skill-btn">Python Programming</a>
+        <a href="#" class="skill-btn">Database Management</a>
+    </div>
+</section>
+
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <h2>Certifications</h2>
-        <div class="certifications-container">
-            <!-- Certifications items -->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+        <div class="certification-item">
+            <img src="images/data analysis.jpg" alt="Data analysis">
+            <div class="certification-content">
+                <h3>Python Data Analysis Certification</h3>
+                <p>Completed in 2023</p>
+                <a href="https://freecodecamp.org/certification/EllyBett/data-analysis-with-python-v7" target="_blank" class="btn">View Certification</a>
+            </div>
         </div>
-    </section>
+
+        <div class="certification-item">
+            <img src="images/amazon.jpg" alt="Amazon">
+            <div class="certification-content">
+                <h3>Amazon Web services Certification</h3>
+                <p>Completed in 2024</p>
+                <a href="https://www.credly.com/badges/2b26b504-03cb-4909-b919-02a6711e55c3/linked_in_profile" target="_blank" class="btn">View Certification</a>
+            </div>
+        </div>
+
+        <div class="certification-item">
+            <img src="images/machine learning.jpg" alt="Machine learning">
+            <div class="certification-content">
+                <h3>Machine Learning Certification</h3>
+                <p>Completed in 2024</p>
+                <a href="https://freecodecamp.org/certification/EllyBett/machine-learning-with-python-v7" target="_blank" class="btn">View Certification</a>
+            </div>
+        </div>
+
+         <div class="certification-item">
+            <img src="images/cisco networks.jpg" alt="cisco networks">
+            <div class="certification-content">
+                <h3>Cisco networks certification</h3>
+                <p>Completed in 2024</p>
+                <a href="https://www.credly.com/badges/c7512356-495c-4ad7-a9df-dbadf5649873/linked_in_profile" target="_blank" class="btn">View Certification</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Job Experience Section -->
-    <section id="experience" class="experience">
-        <h2>Job Experience</h2>
-        <div class="experience-container">
-            <!-- Experience items -->
+<section id="experience" class="experience">
+    <h2>Job Experience</h2>
+    <div class="experience-container">
+        <div class="experience-item">
+            <img src="images/millenium.webp" alt="Millenium">
+            <h3>Software Developer</h3>
+            <p>Worked on various web projects and ERP solutions.</p>
+            <a href="https://www.millenium.co.ke/ target="_blank" class="btn">Visit Company</a>
         </div>
-    </section>
+
+        <div class="experience-item">
+            <img src="images/stem.jpeg" alt="Stem Impact Center">
+            <h3>Project intern</h3>
+            <p>Worked on a project "Compost It" Details available on my github.</p>
+            <a href="https://stemimpactcenterkenya.org/" target="_blank" class="btn">Visit Company</a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-        <a href="mailto:ellbett53@gmail.com" class="btn">Contact Me</a>
-    </section>
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or just want to say hi, feel free to reach out!</p>
+    <a href="mailto:ellbett53@gmail.com.com" class="btn">Contact Me</a>
+</section>
 
-    <script>
-        // Active link on scroll
-        window.addEventListener("scroll", function () {
-            let sections = document.querySelectorAll("section");
-            let navLinks = document.querySelectorAll("nav a");
 
-            sections.forEach((section) => {
-                let top = window.scrollY;
-                let offset = section.offsetTop - 150;
-                let height = section.offsetHeight;
-                let id = section.getAttribute("id");
-
-                if (top >= offset && top < offset + height) {
-                    navLinks.forEach((link) => {
-                        link.classList.remove("active");
-                        document.querySelector("nav a[href*=" + id + "]").classList.add("active");
-                    });
-                }
-            });
-        });
-    </script>
 </body>
-
 </html>
