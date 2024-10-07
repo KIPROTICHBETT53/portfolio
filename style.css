@@ -232,13 +232,13 @@ span{
 
 @keyframes words{
     0%, 10%{
-        content: "Microsoft Dynamics Consultant";
+        content: "Bot Developer";
     }
     11%, 20%{
         content: "AI Expert";
     }
     21%, 30%{
-        content: "Machine Learning Expert";
+        content: "Data Analyst";
     }
     31%, 40%{
         content: "Python Programmer";
