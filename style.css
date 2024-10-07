@@ -112,7 +112,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-image: url('images/profileback.jpg');
 }
 
 .home .home-content h1{
