@@ -10,7 +10,11 @@
     <title>Portfolio Website</title>
 </head>
 <body>
+<script type="module">
+  { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.mjs';
+  inject();
 </script>
+
 
     <header>
         <a href="#home" class="logo">ELLY</a>
@@ -191,14 +195,17 @@
 <section id="contact" class="contact">
     <h2>Get in Touch</h2>
     <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-    <a href="mailto:ellbett53@gmail.com.com" class="btn">Contact Me</a>
+    <a href="mailto:ellbett53@gmail.com" class="btn">Contact Me</a>
     <h2>
        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ellybett53/home'});return false;" class="btn">Schedule time with me</a>
     </h2>
 </section>
-
+<script type="module">
+  { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.mjs';
+  inject();
+</script>
  <script>
         // Active link on scroll
         window.addEventListener("scroll", function () {
