@@ -780,3 +780,6 @@ span{
          pointer-events: none; /* Prevents interaction */
 }
 
+html{
+     scroll-behavior: smooth;
+}

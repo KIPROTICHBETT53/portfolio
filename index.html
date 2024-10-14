@@ -10,8 +10,13 @@
     <title>Portfolio Website</title>
 </head>
 <body>
+<script type="module">
+  { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.mjs';
+  inject();
+</script>
+
     <header>
-        <a href="#" class="logo">BETT</a>
+        <a href="#home" class="logo">ELLY</a>
 
         <nav>
             <a href="#home" class="active"> Home</a>
@@ -26,7 +31,7 @@
     <!-- Home Section -->
     <section id="home" class="home">
         <div class="home-img">
-            <img src="images/profile.jpeg" alt="">
+            <img src="images/profile.jpeg" alt="" loading="lazy">
         </div>
         <div class="home-content">
             <h1>Hi, It's <span>ELLY</span></h1>
@@ -49,35 +54,35 @@
             <h3>Software Development</h3>
             <p>I provide professional software development services to help you build custom applications.</p>
             <span class="btn">Software Development</span>
-            <img src="images/software development.jpg" alt="Software Development">
+            <img src="images/software development.jpg" alt="Software Development" loading="lazy">
         </div>
 
         <div class="service">
             <h3>AI Solutions</h3>
             <p>Leverage the power of AI to transform your business with intelligent solutions.</p>
             <span class="btn">AI Solutions</span>
-            <img src="images/ai consulting.jpg" alt="AI Solutions">
+            <img src="images/ai consulting.jpg" alt="AI Solutions" loading="lazy">
         </div>
 
         <div class="service">
             <h3>Python Programming</h3>
             <p>Expert Python programming services for web development, data science, and more.</p>
             <span class="btn">Python Programming</span>
-            <img src="images/python programming.jpg" alt="Python Programming">
+            <img src="images/python programming.jpg" alt="Python Programming" loading="lazy">
         </div>
 
         <div class="service">
             <h3>Microsoft Dynamics</h3>
             <p>Optimize your business with Microsoft Dynamics solutions tailored to your needs.</p>
             <span class="btn">Microsoft Dynamics</span>
-            <img src="images/microsoft dynamics.jpg" alt="Microsoft Dynamics">
+            <img src="images/microsoft dynamics.jpg" alt="Microsoft Dynamics" loading="lazy">
         </div>
 
         <div class="service">
             <h3>IT Consulting</h3>
             <p>Professional IT consulting services to help you strategize and optimize your IT operations.</p>
             <span class="btn">IT Consulting</span>
-            <img src="images/it consulting.jpg" alt="IT Consulting">
+            <img src="images/it consulting.jpg" alt="IT Consulting" loading="lazy">
         </div>
     </div>
 </section>
@@ -107,7 +112,7 @@
     <h2>Certifications</h2>
     <div class="certifications-container">
         <div class="certification-item">
-            <img src="images/data analysis.jpg" alt="Data analysis">
+            <img src="images/data analysis.jpg" alt="Data analysis" loading="lazy">
             <div class="certification-content">
                 <h3>Python Data Analysis Certification</h3>
                 <p>Completed in 2023</p>
@@ -116,7 +121,7 @@
         </div>
 
         <div class="certification-item">
-            <img src="images/amazon.jpg" alt="Amazon">
+            <img src="images/amazon.jpg" alt="Amazon" loading="lazy">
             <div class="certification-content">
                 <h3>Amazon Web services Certification</h3>
                 <p>Completed in 2024</p>
@@ -125,7 +130,7 @@
         </div>
 
         <div class="certification-item">
-            <img src="images/machine learning.jpg" alt="Machine learning">
+            <img src="images/machine learning.jpg" alt="Machine learning" loading="lazy">
             <div class="certification-content">
                 <h3>Machine Learning Certification</h3>
                 <p>Completed in 2024</p>
@@ -134,7 +139,7 @@
         </div>
 
         <div class="certification-item">
-            <img src="images/symphony-certified-workflow-developer.png" alt="Symphony">
+            <img src="images/symphony-certified-workflow-developer.png" alt="Symphony" loading="lazy">
             <div class="certification-content">
                 <h3>Workflow Developer</h3>
                 <p>Completed in 2024</p>
@@ -143,7 +148,7 @@
         </div>
 
         <div class="certification-item">
-            <img src="images/symphony-certified-bot-developer-python.png" alt="Symphony">
+            <img src="images/symphony-certified-bot-developer-python.png" alt="Symphony" loading="lazy">
             <div class="certification-content">
                 <h3>Bot Developer in python</h3>
                 <p>Completed in 2024</p>
@@ -152,7 +157,7 @@
         </div>
 
          <div class="certification-item">
-            <img src="images/cisco networks.jpg" alt="cisco networks">
+            <img src="images/cisco networks.jpg" alt="cisco networks" loading="lazy">
             <div class="certification-content">
                 <h3>Cisco networks certification</h3>
                 <p>Completed in 2024</p>
@@ -168,7 +173,7 @@
     <h2>Job Experience</h2>
     <div class="experience-container">
         <div class="experience-item">
-            <img src="images/millenium.webp" alt="Millenium">
+            <img src="images/millenium.webp" alt="Millenium" loading="lazy">
             <h3>Software Developer</h3>
             <p>Worked on various web projects and ERP solutions.</p>
             <a href="https://www.millenium.co.ke/" target="_blank" class="btn">Visit Company</a>
@@ -176,7 +181,7 @@
 
         <div>
            <div class="experience-item">
-            <img src="images/stem.jpeg" alt="Stem Impact Center">
+            <img src="images/stem.jpeg" alt="Stem Impact Center" loading="lazy">
             <h3>Project intern</h3>
             <p>Worked on a project "Compost It" Details available on my gitHub.</p>
             <a href="https://stemimpactcenterkenya.org/" target="_blank" class="btn">Visit Company</a>
@@ -193,10 +198,13 @@
     <h2>
        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-       <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ellybett53/home'});return false;" class="btn">Schedule time with me</a>
+       <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ellybett53/home'});return false;" class="btn">Schedule time with me</a>
     </h2>
 </section>
-
+<script type="module">
+   { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@latest/dist/index.mjs';
+   inject();
+</script>
 
  <script>
         // Active link on scroll
