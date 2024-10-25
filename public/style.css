@@ -835,3 +835,7 @@ span{
 html{
      scroll-behavior: smooth;
 }
+/* Add this to your CSS file */
+#__next-prerender-indicator {
+    display: none !important;
+}
