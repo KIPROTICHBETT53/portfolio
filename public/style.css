@@ -376,44 +376,44 @@ span{
         margin-bottom: 3rem;
     }
 }
-
-
 .skills {
-    text-align: center;
-    margin: 50px 0;
-}
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        padding: 50px;
+        border-radius: 15px;
+        margin: 20px auto;
+        max-width: 1900px;
+    }
 
-.skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-}
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* Adjust the space between skill buttons */
-}
+    .skill-tag {
+        border: 2px solid #e94560;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 30px;
+        color: #e94560;
+        font-size: 18px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0px 4px 15px rgba(233, 69, 96, 0.3);
+    }
 
-.skill {
-    background-color: #f1f1f1; /* Light background */
-    padding: 15px 30px;
-    border-radius: 50px; /* Make them rounded */
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    transition: background-color 0.3s ease;
-    cursor: default; /* Not clickable */
-}
+    .skill-tag:hover {
+        background-color: #e94560;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(233, 69, 96, 0.6);
+        text-shadow: 0px 0px 5px white;
+    }
 
-.skill:hover {
-    background-color: #ddd; /* Slight change on hover for interactivity */
-}
-
-.skill:active {
-    transform: scale(0.95); /* Slight "press" effect */
-}
+    h2 {
+        margin-bottom: 30px;
+    }
 
 @media screen and (max-width: 768px) {
     .skills-container {
