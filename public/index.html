@@ -87,19 +87,20 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <span class="btn">Web Development</span>
-            <span class="btn">Machine Learning</span>
-            <span class="btn">Artificial Intelligence</span>
-            <span class="btn">Python Programming</span>
-            <span class="btn">Database Management</span>
-            <span class="btn">Bot Development</span>
-            <span class="btn">Freelancing</span>
-            <span class="btn">REST APIs</span>
-        </div>
-    </section>
+   <section id="skills" class="skills">
+    <h2 style="text-align: center; color: white;">Skills</h2>
+    <div class="skills-grid">
+        <span class="skill-tag"><i class="fas fa-code"></i> Web Development</span>
+        <span class="skill-tag"><i class="fas fa-robot"></i> Machine Learning</span>
+        <span class="skill-tag"><i class="fas fa-brain"></i> Artificial Intelligence</span>
+        <span class="skill-tag"><i class="fab fa-python"></i> Python Programming</span>
+        <span class="skill-tag"><i class="fas fa-database"></i> Database Management</span>
+        <span class="skill-tag"><i class="fas fa-comments"></i> Bot Development</span>
+        <span class="skill-tag"><i class="fas fa-briefcase"></i> Freelancing</span>
+        <span class="skill-tag"><i class="fas fa-link"></i> REST APIs</span>
+    </div>
+</section>
+
 
         <!-- Certifications Section -->
 <section id="certifications" class="certifications">
@@ -180,14 +181,35 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or just want to say hi, feel free to reach out!</p>
-        <a href="mailto:ellybett53@gmail.com" class="btn">Contact Me</a>
-        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ellybett53/home'}); return false;" class="btn">Schedule time with me</a>
-    </section>
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or just want to say hi, feel free to reach out!</p>
 
+    <form action="https://formspree.io/f/mkgngaqz" method="POST" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+</section>
+
+<script>
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault(); // Prevent page refresh
+        const formData = new FormData(form);
+
+        try {
+            await fetch(form.action, { method: 'POST', body: formData });
+            alert("Message sent successfully!");
+            form.reset(); // Clear the form after submission
+        } catch (error) {
+            alert("There was an error sending your message. Please try again.");
+        }
+    });
+</script>
    <script>
         // Active link on scroll
         window.addEventListener("scroll", function () {

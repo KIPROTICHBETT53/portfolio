@@ -791,7 +791,47 @@ span{
          opacity: 0.6; /* Optional: make it look less prominent */
          pointer-events: none; /* Prevents interaction */
 }
+ .contact form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 
+    .contact input,
+    .contact textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .contact button {
+        padding: 12px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+        background-color: #005bb5;
+    }
+
+    @media (max-width: 768px) {
+        .contact form {
+            width: 90%;
+        }
+
+        .contact button {
+            width: 100%;
+        }
+    }
+}
 html{
      scroll-behavior: smooth;
 }
