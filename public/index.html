@@ -9,6 +9,7 @@
     <meta name="author" content="Elly Bett">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
 
     <title>Portfolio Website</title>
@@ -230,6 +231,26 @@
             });
         });
     </script>
+<script>
+    const form = document.getElementById("contactForm");
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const button = form.querySelector('button');
+    button.innerText = 'Sending...';
+
+    try {
+        await fetch(form.action, { method: 'POST', body: formData });
+        alert("Message sent successfully!");
+        form.reset();
+    } catch (error) {
+        alert("There was an error sending your message. Please try again.");
+    } finally {
+        button.innerText = 'Send Message';
+    }
+});
+
+</script>
 </body>
 
 </html>
