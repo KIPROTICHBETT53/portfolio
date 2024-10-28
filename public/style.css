@@ -388,6 +388,7 @@ span{
     margin-bottom: 4rem;
     color: #b74b4b;
     justify-content: center;
+    text-align: center;
     }
     .skills-grid {
         display: flex;
