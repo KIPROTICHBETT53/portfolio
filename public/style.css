@@ -290,7 +290,7 @@ span{
 .services {
     padding: 5rem 9%;
      background-image: url('images/data analysis.jpg');
-     background-size: cover;
+    background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.7); /* Darken background */
     color: white;
@@ -383,7 +383,12 @@ span{
         margin: 20px auto;
         max-width: 1900px;
     }
-
+.skills h2 {
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+    color: #b74b4b;
+    justify-content: center;
+    }
     .skills-grid {
         display: flex;
         flex-wrap: wrap;
