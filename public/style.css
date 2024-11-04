@@ -492,7 +492,11 @@ span{
 /* Certifications Section */
 .certifications {
     padding: 5rem 9%;
-    background-color: #161616;
+    background: rgb(0,212,255);
+    background: -moz-linear-gradient(90deg, rgba(0,212,255,1) 8%, rgba(2,0,36,1) 92%);
+    background: -webkit-linear-gradient(90deg, rgba(0,212,255,1) 8%, rgba(2,0,36,1) 92%);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 8%, rgba(2,0,36,1) 92%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00d4ff",endColorstr="#020024",GradientType=1);
     color: white;
     text-align: center;
 }
@@ -964,5 +968,14 @@ html{
     font-size: 0.9rem;
     font-weight: bold;
     color: #ff6347;
+}
+#footer {
+    text-align: center;
+    font-size:15px;
+    padding: 20px;
+    background-color:black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
