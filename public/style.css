@@ -45,7 +45,7 @@ header{
     transition: opacity 0.9s ease;
     background:black;
     width:200px;
-    border-radius:50%;
+    border-radius:60%;
 }
 
 /* Class to hide the logo */
