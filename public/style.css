@@ -978,4 +978,17 @@ html{
     bottom: 0;
     width: 100%;
 }
+/* Ensure the logo is visible at the top */
+.logo img {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: opacity 0.9s ease;
+    background:black;
+}
+
+/* Class to hide the logo */
+.logo.hidden img {
+    opacity: 0;
+}
 

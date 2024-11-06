@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -31,7 +31,7 @@
 <body>
     <header>
         <a href="#home" class="logo">
-        <img src="images/logo1.png" alt="Elly Bett Logo" id="logo" />
+        <img src="images/logo3.png" alt="Elly Bett Logo" id="logo" />
         <nav>
             <a href="#home" class="active">Home</a>
             <a href="#services">Services</a>
@@ -331,5 +331,16 @@ form.addEventListener("submit", async (e) => {
     }
 });
 </script>
+    <script>
+// JavaScript to hide the logo on scroll
+window.addEventListener("scroll", function () {
+    const logo = document.getElementById("logo");
+    if (window.scrollY > 100) {
+        logo.parentElement.classList.add("hidden");
+    } else {
+        logo.parentElement.classList.remove("hidden");
+    }
+});
+     </script>
 </body>
 </html>
