@@ -6,7 +6,7 @@ Welcome to my portfolio website repository! This site showcases my skills, proje
 Access the live site [here](https://ellybett.vercel.app)
 
 ## 📋 Table of Contents
-- [About](#about)
+- [About](## 📖 About)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Sections](#sections)
