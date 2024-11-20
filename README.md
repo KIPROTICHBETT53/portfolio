@@ -61,4 +61,4 @@ This portfolio website is designed to display my expertise in Software Developme
 If you’d like to reach out, please connect via [LinkedIn](https://www.linkedin.com/in/elly-bett-5b2535247) or use the contact form on my website.
 
 ## 📄 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
