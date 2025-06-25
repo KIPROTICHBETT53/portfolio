@@ -54,6 +54,12 @@
         display: block;
     }
 }
+html.loading {
+    overflow: hidden;
+}
+body.loading {
+    visibility: hidden;
+}
 
 /*
   ================================================
