@@ -28,22 +28,28 @@
         inject();
     </script>
     <script src="/_vercel/speed-insights/script.js" async></script>
+
 </head>
 
 <body>
-    <header>
-        <a href="#home" class="logo"></a>
-        <img src="" alt="" id="logo" />
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#services">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <a href="#home" class="logo"></a>
+    <img src="" alt="" id="logo" />
+
+    <button id="menu-toggle" class="hamburger">
+        ☰
+    </button>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
     <!-- Home Section -->
     <section id="home" class="home">
@@ -66,7 +72,7 @@
 
     <!-- Services Section -->
  <section id="education" class="services">
-  <h2 class="section-heading">My EducationJourney</h2>
+  <h2 class="section-heading">My Education</h2>
   <div class="service-container">
 
     <div class="service">
@@ -396,5 +402,25 @@ window.addEventListener("scroll", function () {
 });
      </script>
 <script src="/_vercel/speed-insights/script.js" async></script>
+
+<script>
+// Navbar hide on scroll
+let lastScrollTop = 0;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", function () {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    header.style.top = currentScroll > lastScrollTop ? "-80px" : "0";
+    lastScrollTop = Math.max(currentScroll, 0);
+});
+
+// Hamburger menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const nav = document.querySelector("nav");
+
+menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
 </body>
 </html>
