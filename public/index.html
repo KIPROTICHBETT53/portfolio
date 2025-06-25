@@ -32,6 +32,11 @@
 </head>
 
 <body>
+<div id="preloader">
+  <div class="dots-loader">
+    <span></span><span></span><span></span>
+  </div>
+</div>
   <header>
     <a href="#home" class="logo"></a>
     <img src="" alt="" id="logo" />
@@ -420,6 +425,17 @@ const nav = document.querySelector("nav");
 
 menuToggle.addEventListener("click", () => {
     nav.classList.toggle("active");
+});
+</script>
+
+<script>
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.opacity = "0";
+    preloader.style.transition = "opacity 0.4s ease";
+    setTimeout(() => {
+        preloader.remove();
+    }, 500);
 });
 </script>
 </body>
