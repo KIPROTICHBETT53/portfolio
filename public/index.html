@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon-32x32.png" type="image/png">
-    <title>Elly Bett — Developer & AI Consultant</title>
+   <title>Elly Bett — Developer & AI Consultant</title>
     <style>
         /* =============================================
            DESIGN SYSTEM
@@ -42,6 +42,9 @@
             --radius: 16px;
             --radius-sm: 10px;
             --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --gold: #f0a500;
+            --gold-dim: rgba(240, 165, 0, 0.12);
+            --gold-border: rgba(240, 165, 0, 0.4);
         }
 
         /* =============================================
@@ -820,6 +823,33 @@
             font-style: normal;
         }
 
+        /* Creative card gold accent */
+        .skill-card--creative { border-color: rgba(240,165,0,0.15); }
+        .skill-card--creative:hover {
+            border-color: rgba(240,165,0,0.4);
+            box-shadow: 0 20px 40px rgba(240,165,0,0.08);
+        }
+        .skill-card--creative .skill-card-head i {
+            background: rgba(240,165,0,0.12);
+            border-color: rgba(240,165,0,0.4);
+            color: #f0a500;
+        }
+        .skill-card--creative li i { color: #f0a500; }
+        .adobe-badges {
+            display: flex; flex-wrap: wrap; gap: 0.7rem;
+            margin-top: 2rem; padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        .adobe-badge {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            padding: 0.4rem 1rem;
+            border-radius: 5rem;
+            border: 1px solid rgba(240,165,0,0.4);
+            color: #f0a500;
+            background: rgba(240,165,0,0.1);
+        }
+
         /* =============================================
            CONTACT
         ============================================= */
@@ -985,7 +1015,7 @@
 <section id="home" style="padding-top: 70px; max-width: 100%; border-top: none;">
     <div class="home-inner">
         <div class="home-content">
-            <div class="home-tag">Available for Freelance</div>
+            <div class="home-tag">Available for Freelance — Dev & Creative</div>
             <h1>
                 Hi, I'm
                 <span class="name">Elly Bett</span>
@@ -993,7 +1023,7 @@
             <p class="typing-wrapper">
                 I'm a <span class="typing-span" id="typing-el">Software Developer</span>
             </p>
-            <p>Welcome to my portfolio! I build smart, scalable digital solutions — from AI-powered apps to sleek web platforms. Let's create something extraordinary together.</p>
+            <p>Welcome to my portfolio! I build smart, scalable digital solutions — from AI-powered apps to sleek web platforms. I also bring ideas to life visually through video editing, motion graphics, and photo editing. Let's create something extraordinary together.</p>
             <div class="home-actions">
                 <a href="https://drive.google.com/file/d/1Js8Z4zGPPHjir8IDC3uFN3K4eRb0U4OC/view?usp=sharing" class="btn-primary" target="_blank">
                     <i class="fas fa-file-alt"></i> View CV
@@ -1091,6 +1121,24 @@
                 <li><i class="fas fa-chevron-right"></i> Amazon Web Services (AWS)</li>
                 <li><i class="fas fa-chevron-right"></i> Workflow Engineering</li>
             </ul>
+        </div>
+        <div class="skill-card skill-card--creative">
+            <div class="skill-card-head">
+                <i class="fas fa-film"></i>
+                <h3>Creative & Design</h3>
+            </div>
+            <ul>
+                <li><i class="fas fa-chevron-right"></i> Video Editing</li>
+                <li><i class="fas fa-chevron-right"></i> Motion Graphics & VFX</li>
+                <li><i class="fas fa-chevron-right"></i> Photo Editing & Retouching</li>
+                <li><i class="fas fa-chevron-right"></i> Colour Grading</li>
+                <li><i class="fas fa-chevron-right"></i> Visual Storytelling</li>
+            </ul>
+            <div class="adobe-badges">
+                <span class="adobe-badge">Photoshop</span>
+                <span class="adobe-badge">Premiere Pro</span>
+                <span class="adobe-badge">After Effects</span>
+            </div>
         </div>
     </div>
 </section>
@@ -1430,7 +1478,7 @@ const mainNav = document.getElementById("main-nav");
 menuToggle.addEventListener("click", () => mainNav.classList.toggle("active"));
 
 // Typing animation
-const words = ["Software Developer", "AI Consultant", "Bot Developer", "Data Analyst", "Python Engineer", "Web Developer"];
+const words = ["Software Developer", "AI Consultant", "Video Editor", "Photo Editor", "Bot Developer", "Data Analyst", "Python Engineer"];
 let wi = 0, ci = 0, deleting = false;
 const el = document.getElementById("typing-el");
 
